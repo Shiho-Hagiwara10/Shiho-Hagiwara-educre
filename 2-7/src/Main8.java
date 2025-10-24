@@ -9,11 +9,11 @@ public static void main(String[] args) {
     System.out.println("防御力を入力してください:");
     int defence = sc.nextInt();
 
-    int normalDamege = attack-defence;
-    int criticalDamege = (int)(normalDamege*1.5);
+    int normalDamage = attack-defence;
+    int criticalDamage = (int)(normalDamage*1.5);
 
-    System.err.println("通常ダメージ:" + normalDamege);
-    System.out.println("クリティカルダメージ:" + criticalDamege);
+    System.out.println("通常ダメージ:" + normalDamage);
+    System.out.println("クリティカルダメージ:" + criticalDamage);
 
     sc.close();
 
