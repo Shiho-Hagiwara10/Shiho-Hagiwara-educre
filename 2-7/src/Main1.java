@@ -3,7 +3,8 @@ public class Main1 {
 int bento = 480;
 int tea = 160;
 int onigiri = 130;
-System.out.println("合計金額は:"+ (bento + tea + onigiri) +"円です。");
+int total = bento + tea + onigiri;
+System.out.println("合計金額は:"+ total +"円です。");
     }
     
 }
