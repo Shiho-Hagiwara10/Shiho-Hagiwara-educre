@@ -9,7 +9,7 @@ public class Main3 {
         int defense=5;
         //ダメージを計算
         //整数同士の計算では小数点以外は切り捨てられる
-        int damage=(attack*2-defense)/3;
+        int damage = (attack * 2 - defense)/3;
         //結果を表示
         System.out.println("与えたダメージ:" + damage);
 
