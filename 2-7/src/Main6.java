@@ -7,7 +7,7 @@ public class Main6 {
         String currentExpString = scanner.nextLine();
         int currentExp = Integer.parseInt(currentExpString);
 
-        double bonusRate =0.25;
+        double bonusRate = 0.25;
         int bonusExp = (int)(currentExp*(1 + bonusRate));
         System.out.println("ボーナス後の経験値:"+ bonusExp);
         scanner.close();
