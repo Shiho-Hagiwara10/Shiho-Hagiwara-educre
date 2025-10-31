@@ -4,6 +4,7 @@ public class Main8 {
         switch (score / 10) {
             case 10:
                 System.out.println("A");
+                break;
             case 9:
                 System.out.println("A");
                 break;
