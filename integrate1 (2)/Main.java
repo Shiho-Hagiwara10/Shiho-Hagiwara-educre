@@ -60,7 +60,7 @@ public class Main {
                         System.out.println("正解です！");
                         correctCount++;
                     } else {
-                        System.out.println("不正解...");
+                        System.out.println("不正解です");
                     }
                 }
                 System.out.println(WordCount + "問中" + correctCount + "問正解！");
