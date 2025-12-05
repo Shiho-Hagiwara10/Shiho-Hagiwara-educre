@@ -1,28 +1,28 @@
 public class Book {
     String title;
-    boolean isLent;
+    boolean isLent;  
 
     public void setTitle(String title) {
         this.title = title;
-    }
-
-    public String getTitle() {
-        return this.title;
-    }
-
-    public void setIsLent(boolean isLent) {
-        this.isLent = isLent;
-    }
-
-    public boolean getIsLent() {
-        return this.isLent;
+        System.out.println(this.title + "を登録しました");
     }
 
     public void lend() {
-        this.isLent = true;
+        if (!isLent) {                     
+            isLent = true;              
+            System.out.println("本を貸し出しました");
+        } else {                           
+            System.out.println("申し訳ありません。この本はすでに貸出中です");
+        }
     }
 
     public void returnBook() {
-        this.isLent = false;
+        if (isLent) {                      
+            isLent = false;                
+            System.out.println("本が返却されました");
+        } else {                         
+            System.out.println("この本は貸出中ではありません");
+        }
     }
 }
+

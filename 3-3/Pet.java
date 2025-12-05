@@ -14,6 +14,10 @@ public class Pet {
         return this.energy;
     }
 
+    public void showEnergy(){
+        System.out.println("現在の体力:" + energy);
+    }
+
     public void eat() {
         energy += 10;
     }

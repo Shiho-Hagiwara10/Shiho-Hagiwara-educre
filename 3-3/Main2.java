@@ -1,38 +1,15 @@
+
 public class Main2 {
     public static void main(String[] args) {
+        Book b = new Book();
 
-        Book book = new Book();
-        book.setTitle("Java入門");
+        b.setTitle("Java入門");
+        b.lend();   
 
-        System.out.println(book.getTitle() + "を登録しました");
+        b.lend();   
 
-    
-        if (!book.getIsLent()) {
-            book.lend();
-            System.out.println("本を貸し出しました");
-        } else {
-            System.out.println("申し訳ございません。この本はすでに貸し出し中です");
-        }
+        b.returnBook(); 
 
-    
-        if (!book.getIsLent()) {
-            book.lend();
-            System.out.println("本を貸し出しました");
-        } else {
-            System.out.println("申し訳ございません。この本はすでに貸し出し中です");
-        }
-
-    
-        book.returnBook();
-        System.out.println("本が返却されました");
-
-    
-        if (!book.getIsLent()) {
-            book.lend();
-            System.out.println("本を貸し出しました");
-        } else {
-            System.out.println("申し訳ございません。この本はすでに貸し出し中です");
-        }
+        b.lend();     
     }
 }
-
