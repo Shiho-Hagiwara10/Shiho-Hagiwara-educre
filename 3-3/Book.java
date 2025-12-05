@@ -4,13 +4,14 @@ public class Book {
 
     public void setTitle(String title) {
         this.title = title;
-        System.out.println(this.title + "を登録しました");
+    }
 
+    public String getTitle() {
+        return this.title;
     }
 
     public void setIsLent(boolean isLent) {
         this.isLent = isLent;
-        System.out.println("本を貸し出しました");
     }
 
     public boolean getIsLent() {
@@ -18,17 +19,10 @@ public class Book {
     }
 
     public void lend() {
-        if (isLent) {
-            System.out.println("本を貸し出しました");
-        } else {
-            isLent = true;
-            System.out.println("申し訳ございません。この本はすでに貸し出し中です");
-        }
+        this.isLent = true;
     }
 
     public void returnBook() {
-        System.out.println("本が返却されました");
-
+        this.isLent = false;
     }
-
 }

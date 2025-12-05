@@ -2,27 +2,19 @@ public class BankAccount {
     int balance;
 
     public int getBalance() {
-         System.out.println("残高:" + balance + "円");
-        return balance;
-
+        return balance;  
     }
 
     public void deposit(int amount) {
         balance += amount;
-        System.out.println(amount + "円預けました");
-        System.out.println("残高:" + balance + "円");
     }
 
-    public void withdraw(int amount) {
+    public boolean withdraw(int amount) {
         if (balance >= amount) {
             balance -= amount;
-            System.out.println(amount + "円引き出しました");
-            System.out.println("残高:" + balance + "円");
-
+            return true;   
         } else {
-            System.out.println("残高が不足しています");
-
+            return false;  
         }
-
     }
 }
