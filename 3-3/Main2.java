@@ -4,6 +4,7 @@ public class Main2 {
         Book b = new Book();
 
         b.setTitle("Java入門");
+        System.out.println("Java入門を登録しました");
         b.lend();   
 
         b.lend();   
