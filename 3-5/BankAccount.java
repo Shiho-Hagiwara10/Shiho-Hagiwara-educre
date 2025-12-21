@@ -1,8 +1,15 @@
 public class BankAccount {
-    int balance;
+    private int balance;
 
     public BankAccount(int balance) {
         this.balance = balance;
     }
 
+    public int getBalance() {
+        return balance;
+    }
+
+    public void setbalance(int balance) {
+        this.balance = balance;
+    }
 }
