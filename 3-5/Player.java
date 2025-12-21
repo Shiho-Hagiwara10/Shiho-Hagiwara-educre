@@ -6,12 +6,11 @@ public class Player {
         this.name = name;
         this.hp =hp;
     }
-
-    public void showStatus(){
+    public void displayInfo() {
         System.out.println("プレイヤー名:" + name);
         System.out.println("プレイヤーのHP:" + hp);
     }
-    public void displayInfo() {
+    public void displayHP(){
         System.out.println("プレイヤーのHP:" + hp);
     }
 }

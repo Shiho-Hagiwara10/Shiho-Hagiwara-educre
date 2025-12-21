@@ -1,9 +1,9 @@
 public class Account {
-    String accountNumer;
+    String accountNumber;
     int balance;
 
     public Account(String accountNumber) {
-        this.accountNumer = accountNumber;
+        this.accountNumber = accountNumber;
         this.balance = 0;
     }
 
@@ -20,5 +20,12 @@ public class Account {
         }
         balance -= amount;
 
+    }
+    public void displayInfo(){
+          System.out.println("口座番号:" + accountNumber);
+          System.out.println("残高:" + balance + "円");
+    }
+    public void displayAfterWithdraw(){
+        System.out.println("出金後残高:" + balance + "円");
     }
 }

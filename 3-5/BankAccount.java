@@ -9,7 +9,7 @@ public class BankAccount {
         return balance;
     }
 
-    public void setbalance(int balance) {
+    public void setBalance(int balance) {
         this.balance = balance;
     }
 }

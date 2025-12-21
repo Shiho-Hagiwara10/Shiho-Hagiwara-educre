@@ -14,4 +14,8 @@ public class Book {
         this.author = author;
         this.pages = pages;
     }
+    public void displayInfo(){
+        System.out.println( title + "-" + author + "(" + pages +"ページ)");
+
+    }
 }
